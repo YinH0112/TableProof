@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "synthetic": true,
+  "coordinateSpace": "original unrotated PDF user space (points)",
+  "fontNotes": "Helvetica; ReportLab-distributed Bitstream Vera; standard STSong-Light CID font. No external font files distributed.",
+  "fixtures": [
+    {
+      "id": "ruled",
+      "filename": "ruled.pdf",
+      "scenario": "Ruled table, literal leading zero and equals",
+      "page": 1,
+      "rotation": 0,
+      "mediaBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "cropBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            62,
+            685
+          ],
+          "bbox": [
+            62,
+            682.93,
+            68.67,
+            692.93
+          ]
+        },
+        "contains": [
+          "00123",
+          "=literal"
+        ],
+        "captionBbox": [
+          48,
+          740,
+          400,
+          762
+        ],
+        "noteBbox": [
+          48,
+          480,
+          550,
+          500
+        ],
+        "unitBbox": [
+          48,
+          465,
+          550,
+          480
+        ]
+      }
+    },
+    {
+      "id": "multiheader",
+      "filename": "multiheader.pdf",
+      "scenario": "Two real spanning header cells",
+      "page": 1,
+      "rotation": 0,
+      "mediaBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "cropBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [
+          {
+            "row": 0,
+            "col": 0,
+            "colSpan": 2
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "colSpan": 2
+          }
+        ],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            65,
+            685
+          ],
+          "bbox": [
+            65,
+            682.93,
+            71.67,
+            692.93
+          ]
+        },
+        "contains": [
+          "Aqueous group",
+          "Solid group"
+        ],
+        "captionBbox": [
+          48,
+          740,
+          400,
+          762
+        ],
+        "noteBbox": [
+          48,
+          480,
+          550,
+          500
+        ],
+        "unitBbox": [
+          48,
+          465,
+          550,
+          480
+        ]
+      }
+    },
+    {
+      "id": "borderless",
+      "filename": "borderless.pdf",
+      "scenario": "Borderless table with explicit optional columns",
+      "page": 1,
+      "rotation": 0,
+      "mediaBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "cropBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [],
+        "contains": [
+          "00123",
+          "=literal"
+        ],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            62,
+            685
+          ],
+          "bbox": [
+            62,
+            682.93,
+            68.67,
+            692.93
+          ]
+        },
+        "columnLinesRaw": [
+          190,
+          310,
+          430
+        ]
+      }
+    },
+    {
+      "id": "unicode_science",
+      "filename": "unicode_science.pdf",
+      "scenario": "Chinese and scientific Unicode strings",
+      "page": 1,
+      "rotation": 0,
+      "mediaBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "cropBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [
+          {
+            "row": 0,
+            "col": 0,
+            "colSpan": 2
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "colSpan": 2
+          }
+        ],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            65,
+            685
+          ],
+          "bbox": [
+            65,
+            682.93,
+            71.67,
+            692.93
+          ]
+        },
+        "contains": [
+          "Aqueous group",
+          "Solid group",
+          "μm ± 0.03",
+          "10^-3 cm²",
+          "样本甲"
+        ],
+        "captionBbox": [
+          48,
+          740,
+          400,
+          762
+        ],
+        "noteBbox": [
+          48,
+          480,
+          550,
+          500
+        ],
+        "unitBbox": [
+          48,
+          465,
+          550,
+          480
+        ]
+      }
+    },
+    {
+      "id": "rotated_90",
+      "filename": "rotated_90.pdf",
+      "scenario": "90 degree page rotation",
+      "page": 1,
+      "rotation": 90,
+      "mediaBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "cropBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            62,
+            685
+          ],
+          "bbox": [
+            62,
+            682.93,
+            68.67,
+            692.93
+          ]
+        },
+        "contains": [
+          "00123",
+          "=literal"
+        ],
+        "captionBbox": [
+          48,
+          740,
+          400,
+          762
+        ],
+        "noteBbox": [
+          48,
+          480,
+          550,
+          500
+        ],
+        "unitBbox": [
+          48,
+          465,
+          550,
+          480
+        ]
+      }
+    },
+    {
+      "id": "rotated_180",
+      "filename": "rotated_180.pdf",
+      "scenario": "180 degree page rotation",
+      "page": 1,
+      "rotation": 180,
+      "mediaBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "cropBox": [
+        0,
+        0,
+        600,
+        800
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            62,
+            685
+          ],
+          "bbox": [
+            62,
+            682.93,
+            68.67,
+            692.93
+          ]
+        },
+        "contains": [
+          "00123",
+          "=literal"
+        ],
+        "captionBbox": [
+          48,
+          740,
+          400,
+          762
+        ],
+        "noteBbox": [
+          48,
+          480,
+          550,
+          500
+        ],
+        "unitBbox": [
+          48,
+          465,
+          550,
+          480
+        ]
+      }
+    },
+    {
+      "id": "crop_nonzero",
+      "filename": "crop_nonzero.pdf",
+      "scenario": "Nonzero MediaBox and smaller CropBox",
+      "page": 1,
+      "rotation": 0,
+      "mediaBox": [
+        20,
+        30,
+        620,
+        830
+      ],
+      "cropBox": [
+        40,
+        40,
+        580,
+        760
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            62,
+            685
+          ],
+          "bbox": [
+            62,
+            682.93,
+            68.67,
+            692.93
+          ]
+        },
+        "contains": [
+          "00123",
+          "=literal"
+        ],
+        "captionBbox": [
+          48,
+          740,
+          400,
+          762
+        ],
+        "noteBbox": [
+          48,
+          480,
+          550,
+          500
+        ],
+        "unitBbox": [
+          48,
+          465,
+          550,
+          480
+        ]
+      }
+    },
+    {
+      "id": "rotated_270_crop",
+      "filename": "rotated_270_crop.pdf",
+      "scenario": "270 degree rotation with nonzero MediaBox and CropBox",
+      "page": 1,
+      "rotation": 270,
+      "mediaBox": [
+        20,
+        30,
+        620,
+        830
+      ],
+      "cropBox": [
+        40,
+        40,
+        580,
+        760
+      ],
+      "tableBbox": [
+        50,
+        510,
+        550,
+        710
+      ],
+      "expected": {
+        "rows": 5,
+        "cols": 4,
+        "mergedCells": [],
+        "anchor": {
+          "text": "A",
+          "baseline": [
+            62,
+            685
+          ],
+          "bbox": [
+            62,
+            682.93,
+            68.67,
+            692.93
+          ]
+        },
+        "contains": [
+          "00123",
+          "=literal"
+        ],
+        "captionBbox": [
+          48,
+          740,
+          400,
+          762
+        ],
+        "noteBbox": [
+          48,
+          480,
+          550,
+          500
+        ],
+        "unitBbox": [
+          48,
+          465,
+          550,
+          480
+        ]
+      }
+    }
+  ]
+}
